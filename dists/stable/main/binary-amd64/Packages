@@ -1,0 +1,22 @@
+Package: sc-panel
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: gnome
+Maintainer: SontosBIT <348543512+SontosBIT@users.noreply.github.com>
+Installed-Size: 88
+Depends: gnome-shell (>= 46), gnome-shell (<< 47)
+Recommends: sc-notes, sc-agenda
+Filename: pool/main/sc-panel_1.0.0_all.deb
+Size: 12960
+MD5sum: 9342f9023a752da695c9ebfd27157490
+SHA1: 3334f98a6957f21dfdd4b93cb3386711b3429ca1
+SHA256: 3f914b013f4f90f1fab56a45fbcdc41060dd85619e037fa9b1105cde09a11f51
+SHA512: f016ae5553118a11dcf3e9981294e1ab9331008c02a0c0b8a6af6ef9d3f97c384ed9103daec5316ea826ef16a28ad2b59bfc5a8d79c35452aea233bb8357e640
+Homepage: https://sontosbit.github.io/sc-apt/
+Description: Dynamic-island style panel for GNOME Shell
+ A small pill at the top of the screen. Click it to open a media player,
+ a notes checklist shared with Sc Notes, and today's agenda from Sc Agenda.
+ .
+ After installing, run "sc-panel-enable" and log out and back in.
+

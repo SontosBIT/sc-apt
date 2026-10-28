@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sc apps</title>
+  <link rel="icon" href="sc-panel.svg">
+  <style>
+    :root { --bg: #141517; --card: #1e1f22; --text: #f2f2f3; --dim: #8e9097; --line: rgba(255,255,255,.08); --accent: #9b8dff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+    header { display: flex; align-items: center; gap: 18px; margin-bottom: 8px; }
+    header img { width: 72px; height: 72px; }
+    h1 { margin: 0; font-size: 36px; }
+    .lead { color: var(--dim); margin: 0 0 36px; }
+    h2 { font-size: 18px; margin: 32px 0 10px; }
+    .step { display: flex; gap: 14px; align-items: baseline; }
+    .num { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 700; font-size: 14px; display: inline-grid; place-items: center; }
+    pre { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; overflow-x: auto; margin: 8px 0 18px; }
+    code { font: 14px/1.5 ui-monospace, "JetBrains Mono", monospace; }
+    p code { background: var(--card); padding: 2px 6px; border-radius: 6px; }
+    .note { color: var(--dim); font-size: 14px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="sc-panel.svg" alt="">
+      <h1>Sc apps</h1>
+    </header>
+    <p class="lead">Sc panel for GNOME: a dynamic-island style pill at the top of your screen with a media player, notes and your agenda.</p>
+
+    <h2>Install on Ubuntu or Zorin OS (GNOME 46)</h2>
+    <div class="step"><span class="num">1</span><div>
+      <p>Add the Sc apps repository (once):</p>
+      <pre><code>curl -fsSL https://sontosbit.github.io/sc-apt/setup.sh | sudo sh</code></pre>
+    </div></div>
+    <div class="step"><span class="num">2</span><div>
+      <p>Install Sc panel:</p>
+      <pre><code>sudo apt install sc-panel</code></pre>
+    </div></div>
+    <div class="step"><span class="num">3</span><div>
+      <p>Turn it on, then log out and back in:</p>
+      <pre><code>sc-panel-enable</code></pre>
+    </div></div>
+
+    <h2>Updates</h2>
+    <p>New versions arrive with your normal system updates, or with <code>sudo apt update &amp;&amp; sudo apt upgrade</code>.</p>
+
+    <h2>Remove</h2>
+    <pre><code>sudo apt remove sc-panel</code></pre>
+    <p class="note">To remove the repository too: <code>sudo rm /etc/apt/sources.list.d/sc-apt.sources /usr/share/keyrings/sc-apt.gpg</code></p>
+
+    <p class="note">Packages are signed with the key <code>AE97 BFD0 44F4 390F 30F3 031E 79B3 BFD1 E311 F83C</code>.</p>
+  </main>
+</body>
+</html>
